@@ -26,7 +26,7 @@ AudioMixerController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FX1
+  m_Name: V2
   m_OutputGroup: {fileID: 0}
   m_MasterGroup: {fileID: 24300002}
   m_Snapshots:
@@ -83,8 +83,8 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: e58866e007100464fa97614f52792488
   m_FloatValues:
-    95743e6705ad6574a9b35388251b8393: 0.71
-    f95e610bb49d49b4faf1db5af8354174: 1.2
-    a440cf9d3719a594cb848b43ae2637bf: -3
-    ca4b544e3c83e794aa284b81b5486b69: 4182
+    95743e6705ad6574a9b35388251b8393: 1.23
+    f95e610bb49d49b4faf1db5af8354174: 0.9
+    a440cf9d3719a594cb848b43ae2637bf: -12
+    ca4b544e3c83e794aa284b81b5486b69: 350
   m_TransitionOverrides: {}
