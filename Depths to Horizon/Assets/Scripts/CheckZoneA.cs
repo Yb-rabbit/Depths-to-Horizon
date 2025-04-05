@@ -13,8 +13,20 @@ public class CheckZoneA : MonoBehaviour
         {
             objectToActivate.SetActive(false); // 确保开始时目标物体是未激活状态
         }
+
+        if (targetObject != null)
+        {
+            if (targetObject.TryGetComponent<ReBuild_Obj>(out ReBuild_Obj rebuildObj))
+            {
+                rebuildObj.OnObjectReset.AddListener(OnTargetObjectReset);
+            }
+        }
     }
 
+    void OnTargetObjectReset(GameObject newTargetObject)
+    {
+        targetObject = newTargetObject;
+    }
 
     // 当另一个碰撞体进入触发器时调用此方法
     void OnTriggerEnter(Collider other)
