@@ -27,7 +27,7 @@ public class CountdownTimer : MonoBehaviour
         }
         else
         {
-            timerText.text = "Time's up!"; // 倒计时结束
+            timerText.text = "END!"; // 倒计时结束
             CheckAndActivateObjects(); // 检查并激活物体
         }
     }
