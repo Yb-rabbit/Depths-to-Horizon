@@ -1,5 +1,25 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!244 &-7370554475729649423
+AudioMixerEffectController:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 
+  m_EffectID: 5d54a5d6878bb484abcb50325030785d
+  m_EffectName: ParamEQ
+  m_MixLevel: 31df1f530716df5499eef5ba665599d4
+  m_Parameters:
+  - m_ParameterName: Center freq
+    m_GUID: ca4b544e3c83e794aa284b81b5486b69
+  - m_ParameterName: Octave range
+    m_GUID: 95743e6705ad6574a9b35388251b8393
+  - m_ParameterName: Frequency gain
+    m_GUID: f95e610bb49d49b4faf1db5af8354174
+  m_SendTarget: {fileID: 0}
+  m_EnableWetMix: 0
+  m_Bypass: 0
 --- !u!241 &24100000
 AudioMixerController:
   m_ObjectHideFlags: 0
@@ -34,6 +54,7 @@ AudioMixerGroupController:
   m_Send: 00000000000000000000000000000000
   m_Effects:
   - {fileID: 24400004}
+  - {fileID: -7370554475729649423}
   m_UserColorIndex: 0
   m_Mute: 0
   m_Solo: 0
@@ -62,5 +83,8 @@ AudioMixerSnapshotController:
   m_AudioMixer: {fileID: 24100000}
   m_SnapshotID: e58866e007100464fa97614f52792488
   m_FloatValues:
+    95743e6705ad6574a9b35388251b8393: 0.71
+    f95e610bb49d49b4faf1db5af8354174: 1.2
     a440cf9d3719a594cb848b43ae2637bf: -2
+    ca4b544e3c83e794aa284b81b5486b69: 4182
   m_TransitionOverrides: {}
