@@ -9,6 +9,7 @@ public class RandomSpawner : MonoBehaviour
     public int maxSpawnCount = 20; // 最大生成数量
     public float spawnRadius = 10.0f; // 生成区域半径
     public float checkInterval = 20.0f; // 检测间隔时间（秒）
+    public string customTag; // 手动指定的标签
 
     private int totalSpawnedCount = 0; // 当前总生成数量
 
@@ -33,6 +34,14 @@ public class RandomSpawner : MonoBehaviour
 
             // 生成物体并设置追踪目标
             GameObject spawnedObject = Instantiate(objectPrefab, randomPos, Quaternion.identity);
+            if (!string.IsNullOrEmpty(customTag))
+            {
+                spawnedObject.tag = customTag; // 使用手动指定的标签
+            }
+            else
+            {
+                spawnedObject.tag = objectPrefab.tag; // 使用预制体本体的标签
+            }
             Tracker tracker = spawnedObject.GetComponent<Tracker>();
             if (tracker != null)
             {
@@ -50,7 +59,7 @@ public class RandomSpawner : MonoBehaviour
             yield return new WaitForSeconds(checkInterval);
 
             // 检测当前生成的物体数量
-            int currentCount = GameObject.FindGameObjectsWithTag(objectPrefab.tag).Length;
+            int currentCount = GameObject.FindGameObjectsWithTag(string.IsNullOrEmpty(customTag) ? objectPrefab.tag : customTag).Length;
 
             // 如果数量不足，并且未达到最大生成数量，则生成新的物体
             if (currentCount < spawnCount && totalSpawnedCount < maxSpawnCount)

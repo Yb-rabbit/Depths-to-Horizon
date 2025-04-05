@@ -5,8 +5,9 @@ public class CountdownTimer : MonoBehaviour
 {
     public Text timerText; // UI文本组件引用
     public float startTime = 120.0f; // 倒计时开始时间（秒）
-    public GameObject[] objectsToCheck; // 要检查数量的物体数组
+    public string objectsToCheckTag; // 要检查的物体标签
     public int minObjectCount = 5; // 最小物体数量
+    public int maxObjectCount = 10; // 最大物体数量
     public GameObject[] objectsToActivate; // 要激活的物体数组
 
     private float currentTime; // 当前时间
@@ -41,24 +42,23 @@ public class CountdownTimer : MonoBehaviour
     // 检查物体数量并激活其他物体
     private void CheckAndActivateObjects()
     {
-        int activeObjectCount = 0;
+        // 查找所有具有指定标签的物体
+        GameObject[] objectsToCheck = GameObject.FindGameObjectsWithTag(objectsToCheckTag);
+        int objectCount = objectsToCheck.Length;
 
-        // 计算当前激活的物体数量
-        foreach (GameObject obj in objectsToCheck)
-        {
-            if (obj.activeInHierarchy)
-            {
-                activeObjectCount++;
-            }
-        }
-
-        // 如果激活的物体数量小于指定值，则激活其他物体
-        if (activeObjectCount < minObjectCount)
+        // 如果物体数量小于最小值，则激活其他物体
+        if (objectCount < minObjectCount)
         {
             foreach (GameObject obj in objectsToActivate)
             {
                 obj.SetActive(true);
             }
+        }
+        // 如果物体数量大于最大值，则重新计时
+        else if (objectCount > maxObjectCount)
+        {
+            currentTime = startTime;
+            timerText.text = FormatTime(currentTime); // 更新显示时间
         }
     }
 }
