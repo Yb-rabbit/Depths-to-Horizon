@@ -374,6 +374,10 @@ PrefabInstance:
       propertyPath: maxSpawnCount
       value: 900
       objectReference: {fileID: 0}
+    - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
+      propertyPath: countdownTimer
+      value: 
+      objectReference: {fileID: 926550819}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5841,6 +5845,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 906683026}
   m_CullTransparentMesh: 1
+--- !u!114 &926550819 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
+  m_PrefabInstance: {fileID: 1065621196}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a6dca6f6760912429d42f3ae8d0acf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &926701949 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1656830259227378808, guid: 5c3a7ecc30ba8cf4d9244ee783bf21f2, type: 3}
