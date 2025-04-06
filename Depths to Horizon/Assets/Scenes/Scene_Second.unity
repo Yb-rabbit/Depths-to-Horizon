@@ -1050,6 +1050,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 21fdde61c88b58246aa346db06ba4c94, type: 3}
   mixerGroups:
   - {fileID: 24300002, guid: 2c8c6ddb88172a94f8b41941bc9f004b, type: 2}
+  delayInSeconds: 0
 --- !u!114 &1274596487
 MonoBehaviour:
   m_ObjectHideFlags: 0
