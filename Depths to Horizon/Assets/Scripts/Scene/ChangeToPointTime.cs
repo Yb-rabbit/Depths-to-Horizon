@@ -29,18 +29,25 @@ public class ChangeToPointTime : MonoBehaviour
     // 渐变并加载场景的协程
     private IEnumerator FadeAndLoadScene()
     {
-        // 确保黑色图像启用
-        fadeImage.gameObject.SetActive(true);
-
-        float elapsedTime = 0f;
-        Color color = fadeImage.color;
-
-        while (elapsedTime < fadeDuration)
+        if (fadeImage != null)
         {
-            elapsedTime += Time.deltaTime;
-            color.a = Mathf.Clamp01(elapsedTime / fadeDuration);
-            fadeImage.color = color;
-            yield return null;
+            // 确保黑色图像启用
+            fadeImage.gameObject.SetActive(true);
+
+            float elapsedTime = 0f;
+            Color color = fadeImage.color;
+
+            while (elapsedTime < fadeDuration)
+            {
+                elapsedTime += Time.deltaTime;
+                color.a = Mathf.Clamp01(elapsedTime / fadeDuration);
+                fadeImage.color = color;
+                yield return null;
+            }
+        }
+        else
+        {
+            Debug.LogWarning("Fade image is not assigned! Skipping fade effect.");
         }
 
         // 加载指定的房间场景
