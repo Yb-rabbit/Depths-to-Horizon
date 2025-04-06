@@ -356,7 +356,7 @@ PrefabInstance:
       objectReference: {fileID: 926701956}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: spawnCount
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: spawnRadius
@@ -392,6 +392,8 @@ GameObject:
   - component: {fileID: 564132861}
   - component: {fileID: 564132860}
   - component: {fileID: 564132864}
+  - component: {fileID: 564132865}
+  - component: {fileID: 564132866}
   m_Layer: 0
   m_Name: CubeTT2
   m_TagString: Untagged
@@ -513,6 +515,43 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+--- !u!95 &564132865
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564132859}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a7cfb4cc7ab0d224480bd292cd645963, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &564132866
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 564132859}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6407be1cd7866444d85537d6ea237e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetY: -20
+  OnObjectReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &587679900
 GameObject:
   m_ObjectHideFlags: 0
@@ -6062,7 +6101,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: startTime
-      value: 30
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: nextSceneName
@@ -6074,7 +6113,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: minObjectCount
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: waitAfterShrink
@@ -6428,6 +6467,7 @@ MonoBehaviour:
   - {fileID: 24300002, guid: 2c8c6ddb88172a94f8b41941bc9f004b, type: 2}
   - {fileID: 24300002, guid: 8b42499c353300a4dbd8bea0e4f55d0c, type: 2}
   - {fileID: 24300002, guid: 2c8c6ddb88172a94f8b41941bc9f004b, type: 2}
+  delayInSeconds: 0
 --- !u!1 &1533092738
 GameObject:
   m_ObjectHideFlags: 0
@@ -6442,6 +6482,7 @@ GameObject:
   - component: {fileID: 1533092740}
   - component: {fileID: 1533092739}
   - component: {fileID: 1533092744}
+  - component: {fileID: 1533092745}
   m_Layer: 0
   m_Name: CubeTT341
   m_TagString: Untagged
@@ -6576,6 +6617,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1249460513}
   objectToActivate: {fileID: 564132859}
+--- !u!114 &1533092745
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1533092738}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6407be1cd7866444d85537d6ea237e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetY: -50
+  OnObjectReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1579079459
 GameObject:
   m_ObjectHideFlags: 0

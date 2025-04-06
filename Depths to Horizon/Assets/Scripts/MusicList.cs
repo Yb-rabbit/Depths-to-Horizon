@@ -9,6 +9,8 @@ public class MusicList : MonoBehaviour
     public List<AudioMixerGroup> mixerGroups; // 混音器轨道列表
     private AudioSource audioSource;
     private int currentClipIndex = 0;
+    public float delayInSeconds = 5f; // 延迟秒数
+    private bool firstClipPlayed = false; // 标志位，判断是否已经播放了第一个音频
 
     void Start()
     {
@@ -20,16 +22,23 @@ public class MusicList : MonoBehaviour
 
         if (musicClips.Count > 0)
         {
-            PlayCurrentClip();
+            StartCoroutine(PlayFirstClipWithDelay());
         }
     }
 
     void Update()
     {
-        if (!audioSource.isPlaying)
+        if (firstClipPlayed && !audioSource.isPlaying)
         {
             PlayNextClip();
         }
+    }
+
+    IEnumerator PlayFirstClipWithDelay()
+    {
+        yield return new WaitForSeconds(delayInSeconds);
+        PlayCurrentClip();
+        firstClipPlayed = true; // 设置标志位为 true，表示已经播放了第一个音频
     }
 
     void PlayCurrentClip()

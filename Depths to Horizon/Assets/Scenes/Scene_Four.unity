@@ -482,6 +482,7 @@ GameObject:
   - component: {fileID: 1044856567}
   - component: {fileID: 1044856569}
   - component: {fileID: 1044856568}
+  - component: {fileID: 1044856570}
   m_Layer: 5
   m_Name: Text (10)
   m_TagString: Untagged
@@ -550,6 +551,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1044856566}
   m_CullTransparentMesh: 1
+--- !u!114 &1044856570
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044856566}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c257da8a83684b4687f0a25457e8a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Scene_END
 --- !u!1 &1047201916 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 1656830259227378808, guid: 5c3a7ecc30ba8cf4d9244ee783bf21f2, type: 3}
@@ -670,6 +684,17 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
+--- !u!114 &1103379908 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
+  m_PrefabInstance: {fileID: 7406913697211913427}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4a6dca6f6760912429d42f3ae8d0acf3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1249900315
 GameObject:
   m_ObjectHideFlags: 0
@@ -914,7 +939,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: -Press the left button to do one more turn-
+  m_Text: -Press the left button and wait 15 seconds-
 --- !u!222 &1344048536
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1039,6 +1064,7 @@ GameObject:
   - component: {fileID: 1546682905}
   - component: {fileID: 1546682909}
   - component: {fileID: 1546682910}
+  - component: {fileID: 1546682911}
   m_Layer: 0
   m_Name: Cube_ACT
   m_TagString: Untagged
@@ -1173,6 +1199,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1797037719}
   objectToActivate: {fileID: 1509884747}
+--- !u!114 &1546682911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1546682904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6407be1cd7866444d85537d6ea237e60, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  resetY: -200
+  OnObjectReset:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1577921213
 GameObject:
   m_ObjectHideFlags: 0
@@ -1184,7 +1226,6 @@ GameObject:
   - component: {fileID: 1577921216}
   - component: {fileID: 1577921215}
   - component: {fileID: 1577921214}
-  - component: {fileID: 1577921217}
   m_Layer: 0
   m_Name: Particle SystemRain
   m_TagString: Untagged
@@ -6004,19 +6045,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
---- !u!114 &1577921217
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1577921213}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c257da8a83684b4687f0a25457e8a6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Scene_END
 --- !u!1 &1581038406
 GameObject:
   m_ObjectHideFlags: 0
@@ -6537,6 +6565,7 @@ MonoBehaviour:
   mixerGroups:
   - {fileID: 24300002, guid: 8b42499c353300a4dbd8bea0e4f55d0c, type: 2}
   - {fileID: 24300002, guid: 88ae66b0fedb07441adb12267be63b41, type: 2}
+  delayInSeconds: 2
 --- !u!1 &1929051031
 GameObject:
   m_ObjectHideFlags: 0
@@ -6861,8 +6890,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 418585713}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
+      propertyPath: spawnCount
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: spawnRadius
-      value: 75
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: objectPrefab
@@ -6876,6 +6909,10 @@ PrefabInstance:
       propertyPath: maxSpawnCount
       value: 900
       objectReference: {fileID: 0}
+    - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
+      propertyPath: countdownTimer
+      value: 
+      objectReference: {fileID: 1103379908}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6930,20 +6967,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
-      propertyPath: startTime
-      value: 30
+      propertyPath: textA
+      value: ReLoading...
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
-      propertyPath: nextSceneName
-      value: Scene_END
-      objectReference: {fileID: 0}
-    - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
-      propertyPath: minObjectCount
-      value: 3
-      objectReference: {fileID: 0}
-    - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
-      propertyPath: objectsToActivate.Array.size
-      value: 2
+      propertyPath: textB
+      value: Something Drop...
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: objectsToActivate.Array.data[0]

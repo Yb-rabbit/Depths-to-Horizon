@@ -2289,6 +2289,7 @@ MonoBehaviour:
   collisionSound: {fileID: 8300000, guid: de6c1dc07b416684980dc8fc79f345c7, type: 3}
   nextSceneName: Scene_Second
   targetTag: Player
+  audioMixerGroup: {fileID: 24300002, guid: 8b42499c353300a4dbd8bea0e4f55d0c, type: 2}
 --- !u!135 &1829405423
 SphereCollider:
   m_ObjectHideFlags: 0
