@@ -192,7 +192,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Now, find the "exit" and I'll be waiting for you on the next platform
+  m_Text: ' '
 --- !u!222 &21030378
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -272,7 +272,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Objects in the scene will have different sounds
+  m_Text: It seems that something is hiding deeper
 --- !u!222 &112233156
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -379,6 +379,85 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 112384329}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &179569458
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 179569459}
+  - component: {fileID: 179569461}
+  - component: {fileID: 179569460}
+  m_Layer: 5
+  m_Name: Text (7)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &179569459
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179569458}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 948727674}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -340}
+  m_SizeDelta: {x: 1623.1067, y: 127.7313}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &179569460
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179569458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_FontData:
+    m_Font: {fileID: 12800000, guid: e08eec76cbfd41a429b125b8e910009d, type: 3}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 1
+    m_MinSize: 10
+    m_MaxSize: 60
+    m_Alignment: 4
+    m_AlignByGeometry: 1
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Hopefully, you realize that "EXIT" is correct
+--- !u!222 &179569461
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 179569458}
+  m_CullTransparentMesh: 1
 --- !u!1 &322312447
 GameObject:
   m_ObjectHideFlags: 0
@@ -1112,8 +1191,8 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 128
   DopplerLevel: 1.14
-  MinDistance: 0.3
-  MaxDistance: 10.5
+  MinDistance: 0.83
+  MaxDistance: 20.62
   Pan2D: 0
   rolloffMode: 0
   BypassEffects: 0
@@ -1220,6 +1299,19 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 7738999576216962088, guid: f4a68be0d281fcd4bb6de9e24e9768e0, type: 3}
   m_PrefabInstance: {fileID: 1770175324866069337}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &797648437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 797648431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7c257da8a83684b4687f0a25457e8a6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneName: Scene_SecondRE
 --- !u!1001 &901278257
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1314,8 +1406,8 @@ RectTransform:
   - {fileID: 591054961}
   - {fileID: 1416369701}
   - {fileID: 21030376}
-  - {fileID: 999513513}
-  - {fileID: 1568356681}
+  - {fileID: 179569459}
+  - {fileID: 1513076050}
   m_Father: {fileID: 1723795348}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -1380,87 +1472,8 @@ MonoBehaviour:
   - {fileID: 112233155}
   - {fileID: 1416369702}
   - {fileID: 21030377}
-  - {fileID: 999513514}
-  - {fileID: 1568356682}
---- !u!1 &999513512
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 999513513}
-  - component: {fileID: 999513515}
-  - component: {fileID: 999513514}
-  m_Layer: 5
-  m_Name: Text (7)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &999513513
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999513512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 948727674}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -340}
-  m_SizeDelta: {x: 1623.1067, y: 127.7313}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &999513514
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999513512}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
-  m_RaycastTarget: 0
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_FontData:
-    m_Font: {fileID: 12800000, guid: e08eec76cbfd41a429b125b8e910009d, type: 3}
-    m_FontSize: 14
-    m_FontStyle: 0
-    m_BestFit: 1
-    m_MinSize: 10
-    m_MaxSize: 60
-    m_Alignment: 4
-    m_AlignByGeometry: 1
-    m_RichText: 1
-    m_HorizontalOverflow: 0
-    m_VerticalOverflow: 0
-    m_LineSpacing: 1
-  m_Text: -Press the left mouse button to reread the tutorial-
---- !u!222 &999513515
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 999513512}
-  m_CullTransparentMesh: 1
+  - {fileID: 179569460}
+  - {fileID: 1513076051}
 --- !u!1 &1015562821
 GameObject:
   m_ObjectHideFlags: 0
@@ -1476,7 +1489,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1015562822
 Transform:
   m_ObjectHideFlags: 0
@@ -1663,12 +1676,70 @@ MonoBehaviour:
   targets:
   - {fileID: 342037066}
   - {fileID: 766683043}
+  - {fileID: 2047413952}
   offset: {x: 0, y: 6, z: -12}
   smoothSpeed: 0.125
   rotationSpeed: 5
   minDistance: 15
   maxDistance: 20
   zoomSpeed: 10
+--- !u!1001 &1216556074
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10.260001
+      objectReference: {fileID: 0}
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 840213398274510643, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2629346287330830437, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
+      propertyPath: m_Name
+      value: Camera22
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: db4f7905ca0271a4bbdc21f64bea98c6, type: 3}
 --- !u!1 &1257177930
 GameObject:
   m_ObjectHideFlags: 0
@@ -2065,8 +2136,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Don't worry about falling off the edge, they will help you get back to
-    the platform
+  m_Text: I must take my leave now
 --- !u!222 &1416369703
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2362,7 +2432,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Use the left mouse button to switch between text
+  m_Text: Use the left mouse button to switch the skybox
 --- !u!222 &1475580350
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2392,7 +2462,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
---- !u!1 &1568356680
+--- !u!1 &1513076049
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2400,9 +2470,9 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 1568356681}
-  - component: {fileID: 1568356683}
-  - component: {fileID: 1568356682}
+  - component: {fileID: 1513076050}
+  - component: {fileID: 1513076052}
+  - component: {fileID: 1513076051}
   m_Layer: 5
   m_Name: Text (8)
   m_TagString: Untagged
@@ -2410,13 +2480,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &1568356681
+--- !u!224 &1513076050
 RectTransform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568356680}
+  m_GameObject: {fileID: 1513076049}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -2429,13 +2499,13 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -340}
   m_SizeDelta: {x: 1623.1067, y: 127.7313}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1568356682
+--- !u!114 &1513076051
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568356680}
+  m_GameObject: {fileID: 1513076049}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
@@ -2463,13 +2533,13 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: ' '
---- !u!222 &1568356683
+--- !u!222 &1513076052
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1568356680}
+  m_GameObject: {fileID: 1513076049}
   m_CullTransparentMesh: 1
 --- !u!1 &1612753886 stripped
 GameObject:
@@ -2696,7 +2766,6 @@ GameObject:
   - component: {fileID: 1829405423}
   - component: {fileID: 1829405422}
   - component: {fileID: 1829405426}
-  - component: {fileID: 1829405427}
   m_Layer: 0
   m_Name: SphereT
   m_TagString: Untagged
@@ -2732,7 +2801,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   collisionSound: {fileID: 8300000, guid: de6c1dc07b416684980dc8fc79f345c7, type: 3}
-  nextSceneName: Scene_Second
+  nextSceneName: Scene_SecondRE
   targetTag: Player
   audioMixerGroup: {fileID: 24300002, guid: 8b42499c353300a4dbd8bea0e4f55d0c, type: 2}
 --- !u!135 &1829405423
@@ -2778,19 +2847,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetObject: {fileID: 1612753886}
   objectToActivate: {fileID: 797648431}
---- !u!114 &1829405427
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1829405420}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7c257da8a83684b4687f0a25457e8a6f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sceneName: Scene_Second
 --- !u!1 &1864406903
 GameObject:
   m_ObjectHideFlags: 0
@@ -2862,7 +2918,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Move with A,D,W,S
+  m_Text: Move as you did before
 --- !u!222 &1864406906
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3074,7 +3130,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 7738999576216962088, guid: f4a68be0d281fcd4bb6de9e24e9768e0, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 797648437}
   m_SourcePrefab: {fileID: 100100000, guid: f4a68be0d281fcd4bb6de9e24e9768e0, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
@@ -3092,3 +3151,4 @@ SceneRoots:
   - {fileID: 1462968006}
   - {fileID: 1015562822}
   - {fileID: 1770175324866069337}
+  - {fileID: 1216556074}
