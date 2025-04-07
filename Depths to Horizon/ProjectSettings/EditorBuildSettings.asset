@@ -38,4 +38,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/RE/Scene_ThrRE.unity
     guid: 9aee92d3d73368144b3decf47af18919
+  - enabled: 1
+    path: Assets/Scenes/RE/Scene_REFour.unity
+    guid: c6289b3c0ed1d004fa88679a08da87d9
+  - enabled: 0
+    path: Assets/Scenes/RE/Scene_TrueEND.unity
+    guid: ba1e6c63f6cc503449132da4c1344bf7
   m_configObjects: {}
