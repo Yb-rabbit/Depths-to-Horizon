@@ -6891,11 +6891,11 @@ PrefabInstance:
       objectReference: {fileID: 418585713}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: spawnCount
-      value: 7
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: spawnRadius
-      value: 80
+      value: 100
       objectReference: {fileID: 0}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: objectPrefab
@@ -6968,7 +6968,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: textA
-      value: ReLoading...
+      value: Up to 5 reds
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: textB
@@ -6976,7 +6976,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: minObjectCount
-      value: 2
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: objectsToActivate.Array.data[0]

@@ -356,11 +356,11 @@ PrefabInstance:
       objectReference: {fileID: 926701956}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: spawnCount
-      value: 3
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: spawnRadius
-      value: 30
+      value: 35
       objectReference: {fileID: 0}
     - target: {fileID: 2142246601634868733, guid: dab812dd119459f4bbbcae2001e13f06, type: 3}
       propertyPath: objectPrefab
@@ -6137,8 +6137,12 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
+      propertyPath: textA
+      value: Up to 2 reds
+      objectReference: {fileID: 0}
+    - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: textB
-      value: I got you...
+      value: Well Done...
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: startTime
@@ -6154,7 +6158,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: minObjectCount
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3501195570933279694, guid: eabeb047550d4cc45a14d19a0f9d9f77, type: 3}
       propertyPath: waitAfterShrink
